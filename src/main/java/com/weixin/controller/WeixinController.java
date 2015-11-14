@@ -30,4 +30,13 @@ public class WeixinController {
 		mv.setViewName("hello");
 		return mv;
 	}
+	@RequestMapping("test")
+	@ResponseBody
+	public String weixin(String signature,String echostr,String timestamp,String nonce){
+	    System.out.println(echostr);
+	    System.out.println(timestamp);
+	    System.out.println(nonce);
+	    return echostr;
+	    
+	}
 }
