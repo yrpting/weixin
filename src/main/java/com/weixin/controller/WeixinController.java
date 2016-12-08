@@ -28,6 +28,7 @@ public class WeixinController {
 	@RequestMapping("start")
 	public ModelAndView welcome(ModelAndView mv) {
 		mv.setViewName("hello");
+		//add by rupengyan at 20161208
 		return mv;
 	}
 	@RequestMapping("test")
